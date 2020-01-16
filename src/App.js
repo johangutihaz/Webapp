@@ -1,14 +1,23 @@
 import React from 'react';
 import './App.css';
-import CarmodelList from './CarmodelList';
+import Car from './Car';
+import Header from './header.jpg';
+
+
+
 
 
 function App() {
+  
   return (
-    <div className="App">
-      <img src='/header.jpg' alt="Simply Easy Learning" width="200"
-         height="80"></img>
-    < CarmodelList/>
+    <div className="app" >
+      <img src={Header} alt="" ></img>
+      < Car brand='BMW' model='335i' price='200000'/>
+      < Car brand='Aston Martin' model='Vanquish' price='233000'/>
+      < Car brand='Toyota' model='Prius' price='150000'/>
+      
+      
+      
     </div>
   );
 }
